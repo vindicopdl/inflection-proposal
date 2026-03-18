@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Inflection — Enterprise Communication Intelligence Platform. Proposal & Pitch Deck.">
+  <meta name="description" content="Inflection — AI-Powered Communication Intelligence Platform. Proposal & Pitch Deck.">
   <meta name="theme-color" content="#0b0b0f">
   <meta name="robots" content="noindex, nofollow">
   <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png" />
@@ -83,6 +83,8 @@
         <a href="#solution" class="nav-link px-2.5 py-1.5 text-gray-400 hover:text-white transition-colors rounded">Solution</a>
         <a href="#landscape" class="nav-link px-2.5 py-1.5 text-gray-400 hover:text-white transition-colors rounded">Landscape</a>
         <a href="#features" class="nav-link px-2.5 py-1.5 text-gray-400 hover:text-white transition-colors rounded">Features</a>
+        <a href="#personal" class="nav-link px-2.5 py-1.5 text-gray-400 hover:text-white transition-colors rounded">Personal</a>
+        <a href="#usecases" class="nav-link px-2.5 py-1.5 text-gray-400 hover:text-white transition-colors rounded">Use Cases</a>
         <a href="#demo" class="nav-link px-2.5 py-1.5 text-gray-400 hover:text-white transition-colors rounded">Product</a>
         <a href="#gtm" class="nav-link px-2.5 py-1.5 text-gray-400 hover:text-white transition-colors rounded">GTM</a>
         <a href="#pricing" class="nav-link px-2.5 py-1.5 text-gray-400 hover:text-white transition-colors rounded">Pricing</a>
@@ -102,6 +104,8 @@
       <a href="#solution" class="text-gray-400 hover:text-white py-1">Solution</a>
       <a href="#landscape" class="text-gray-400 hover:text-white py-1">Landscape</a>
       <a href="#features" class="text-gray-400 hover:text-white py-1">Features</a>
+      <a href="#personal" class="text-gray-400 hover:text-white py-1">Personal</a>
+      <a href="#usecases" class="text-gray-400 hover:text-white py-1">Use Cases</a>
       <a href="#demo" class="text-gray-400 hover:text-white py-1">Product</a>
       <a href="#gtm" class="text-gray-400 hover:text-white py-1">GTM</a>
       <a href="#pricing" class="text-gray-400 hover:text-white py-1">Pricing</a>
@@ -124,11 +128,15 @@
     </button>
     <button onclick="setMode('investor')" class="mode-btn w-full text-left px-3 py-2 rounded-lg text-sm hover:bg-white/5 transition-colors" data-mode-btn="investor">
       <span class="font-medium text-white">Investor</span>
-      <span class="text-gray-500 text-xs ml-1">+ Financials</span>
+      <span class="text-gray-500 text-xs ml-1">Full deck</span>
     </button>
     <button onclick="setMode('sales')" class="mode-btn w-full text-left px-3 py-2 rounded-lg text-sm hover:bg-white/5 transition-colors" data-mode-btn="sales">
       <span class="font-medium text-white">Sales</span>
-      <span class="text-gray-500 text-xs ml-1">No financials</span>
+      <span class="text-gray-500 text-xs ml-1">All features</span>
+    </button>
+    <button onclick="setMode('corporate')" class="mode-btn w-full text-left px-3 py-2 rounded-lg text-sm hover:bg-white/5 transition-colors" data-mode-btn="corporate">
+      <span class="font-medium text-white">Corporate</span>
+      <span class="text-gray-500 text-xs ml-1">B2B focus</span>
     </button>
   </div>
   <button id="mode-toggle-btn" onclick="document.getElementById('mode-menu').classList.toggle('hidden')" class="bg-purple hover:bg-purple/80 text-white rounded-full px-4 py-2.5 text-sm font-medium shadow-lg shadow-purple/20 flex items-center gap-2 transition-all">
@@ -160,7 +168,7 @@
       </h1>
       <p class="text-xl md:text-2xl text-gray-300 font-light mb-3">Better conversations. Stronger relationships.</p>
       <div class="inline-block px-4 py-1.5 rounded-full border border-purple/30 bg-purple/5 mb-10">
-        <p class="text-sm text-purple-light font-medium tracking-wide">Enterprise Communication Intelligence Platform</p>
+        <p class="text-sm text-purple-light font-medium tracking-wide">AI-Powered Communication Intelligence Platform</p>
       </div>
     </div>
     <div class="reveal mt-8 flex flex-col items-center gap-8">
@@ -183,7 +191,7 @@
 <!-- ============================================================ -->
 <!-- SECTION 2: THE PROBLEM -->
 <!-- ============================================================ -->
-<section id="problem" class="py-24 border-t border-white/5">
+<section id="problem" class="py-24 border-t border-white/5" data-mode="full investor sales corporate">
   <div class="max-w-5xl mx-auto px-6">
     <div class="reveal text-center mb-16">
       <p class="text-xs text-purple-light uppercase tracking-widest mb-3">The Problem</p>
@@ -220,7 +228,7 @@
 <!-- ============================================================ -->
 <!-- SECTION 3: THE SOLUTION -->
 <!-- ============================================================ -->
-<section id="solution" class="py-24 border-t border-white/5">
+<section id="solution" class="py-24 border-t border-white/5" data-mode="full investor sales corporate">
   <div class="max-w-5xl mx-auto px-6">
     <div class="reveal text-center mb-16">
       <p class="text-xs text-purple-light uppercase tracking-widest mb-3">The Solution</p>
@@ -265,7 +273,7 @@
 <!-- ============================================================ -->
 <!-- SECTION 4: COMPETITIVE LANDSCAPE -->
 <!-- ============================================================ -->
-<section id="landscape" class="py-24 border-t border-white/5" data-mode="full sales investor">
+<section id="landscape" class="py-24 border-t border-white/5" data-mode="full investor sales corporate">
   <div class="max-w-6xl mx-auto px-6">
     <div class="reveal text-center mb-16">
       <p class="text-xs text-purple-light uppercase tracking-widest mb-3">Competitive Landscape</p>
@@ -341,7 +349,7 @@
 <!-- ============================================================ -->
 <!-- SECTION 5: FEATURE MATRIX -->
 <!-- ============================================================ -->
-<section id="features" class="py-24 border-t border-white/5" data-mode="full sales investor">
+<section id="features" class="py-24 border-t border-white/5" data-mode="full investor sales corporate">
   <div class="max-w-6xl mx-auto px-6">
     <div class="reveal text-center mb-16">
       <p class="text-xs text-purple-light uppercase tracking-widest mb-3">Feature Comparison</p>
@@ -367,9 +375,153 @@
 </section>
 
 <!-- ============================================================ -->
+<!-- SECTION 5B: PERSONAL & RELATIONSHIP FEATURES -->
+<!-- ============================================================ -->
+<section id="personal" class="py-24 border-t border-white/5" data-mode="full investor sales">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="reveal text-center mb-16">
+      <p class="text-xs text-purple-light uppercase tracking-widest mb-3">Beyond the Workplace</p>
+      <h2 class="text-3xl md:text-5xl font-light font-brand mb-6">Communication coaching<br class="hidden md:block"> for every relationship</h2>
+      <p class="text-gray-400 text-lg max-w-2xl mx-auto">Inflection is not just a workplace tool. The same AI that coaches teams also coaches couples, families, friendships, and business partnerships.</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6">
+      <!-- Couple Mode -->
+      <div class="reveal rounded-2xl p-8 bg-card border border-white/[0.06]">
+        <div class="flex items-start gap-4 mb-5">
+          <div class="w-12 h-12 rounded-xl bg-disc-red/10 flex items-center justify-center shrink-0">
+            <svg class="w-6 h-6 text-disc-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+          <div>
+            <h3 class="font-brand text-xl text-white mb-2">Couple Mode</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">Joint personality reports for romantic partners. Each person gets private coaching tailored to the other&rsquo;s style, plus a shared coaching space. A relationship dashboard tracks communication health over time.</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-3 ml-16">
+          <div class="rounded-lg bg-white/[0.03] px-3 py-2"><p class="text-xs text-gray-400">Joint personality reports</p></div>
+          <div class="rounded-lg bg-white/[0.03] px-3 py-2"><p class="text-xs text-gray-400">Private coaching per person</p></div>
+          <div class="rounded-lg bg-white/[0.03] px-3 py-2"><p class="text-xs text-gray-400">Shared coaching space</p></div>
+          <div class="rounded-lg bg-white/[0.03] px-3 py-2"><p class="text-xs text-gray-400">Relationship dashboard</p></div>
+        </div>
+      </div>
+      <!-- Dating & Relationships -->
+      <div class="reveal rounded-2xl p-8 bg-card border border-white/[0.06]">
+        <div class="flex items-start gap-4 mb-5">
+          <div class="w-12 h-12 rounded-xl bg-disc-yellow/10 flex items-center justify-center shrink-0">
+            <svg class="w-6 h-6 text-disc-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+          </div>
+          <div>
+            <h3 class="font-brand text-xl text-white mb-2">Dating &amp; Relationships</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">Analyse conversations from dating apps, WhatsApp, or texts. Understand someone&rsquo;s communication style before committing. Get coached on how to communicate better with a potential partner.</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-3 ml-16">
+          <div class="rounded-lg bg-white/[0.03] px-3 py-2"><p class="text-xs text-gray-400">Dating app analysis</p></div>
+          <div class="rounded-lg bg-white/[0.03] px-3 py-2"><p class="text-xs text-gray-400">Style compatibility check</p></div>
+          <div class="rounded-lg bg-white/[0.03] px-3 py-2"><p class="text-xs text-gray-400">Pre-commitment insights</p></div>
+          <div class="rounded-lg bg-white/[0.03] px-3 py-2"><p class="text-xs text-gray-400">Partner coaching tips</p></div>
+        </div>
+      </div>
+      <!-- Family & Friends -->
+      <div class="reveal rounded-2xl p-8 bg-card border border-white/[0.06]">
+        <div class="flex items-start gap-4 mb-5">
+          <div class="w-12 h-12 rounded-xl bg-disc-blue/10 flex items-center justify-center shrink-0">
+            <svg class="w-6 h-6 text-disc-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+          </div>
+          <div>
+            <h3 class="font-brand text-xl text-white mb-2">Family &amp; Friends</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">Understand family dynamics through DISC and MBTI. Get coaching on difficult conversations with parents, siblings, and in-laws. Improve friendships through better communication awareness.</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-3 ml-16">
+          <div class="rounded-lg bg-white/[0.03] px-3 py-2"><p class="text-xs text-gray-400">Family dynamic mapping</p></div>
+          <div class="rounded-lg bg-white/[0.03] px-3 py-2"><p class="text-xs text-gray-400">Difficult conversation coaching</p></div>
+          <div class="rounded-lg bg-white/[0.03] px-3 py-2"><p class="text-xs text-gray-400">Parent/sibling insights</p></div>
+          <div class="rounded-lg bg-white/[0.03] px-3 py-2"><p class="text-xs text-gray-400">Friendship awareness</p></div>
+        </div>
+      </div>
+      <!-- Business Partner Mode -->
+      <div class="reveal rounded-2xl p-8 bg-card border border-white/[0.06]">
+        <div class="flex items-start gap-4 mb-5">
+          <div class="w-12 h-12 rounded-xl bg-disc-green/10 flex items-center justify-center shrink-0">
+            <svg class="w-6 h-6 text-disc-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </div>
+          <div>
+            <h3 class="font-brand text-xl text-white mb-2">Business Partner Mode</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">AI-crawled company brief. Joint leadership reports. Private and shared coaching spaces. DISC gap analysis for co-founders and business partners to align on communication and decision-making.</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-3 ml-16">
+          <div class="rounded-lg bg-white/[0.03] px-3 py-2"><p class="text-xs text-gray-400">AI company brief</p></div>
+          <div class="rounded-lg bg-white/[0.03] px-3 py-2"><p class="text-xs text-gray-400">Joint leadership reports</p></div>
+          <div class="rounded-lg bg-white/[0.03] px-3 py-2"><p class="text-xs text-gray-400">DISC gap analysis</p></div>
+          <div class="rounded-lg bg-white/[0.03] px-3 py-2"><p class="text-xs text-gray-400">Private + shared coaching</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SECTION 5C: USE CASES -->
+<!-- ============================================================ -->
+<section id="usecases" class="py-24 border-t border-white/5" data-mode="full investor sales corporate">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="reveal text-center mb-16">
+      <p class="text-xs text-purple-light uppercase tracking-widest mb-3">Who It&rsquo;s For</p>
+      <h2 class="text-3xl md:text-5xl font-light font-brand mb-6">One platform, every relationship</h2>
+      <p class="text-gray-400 text-lg max-w-2xl mx-auto">Inflection meets people wherever they communicate &mdash; at work, at home, and everywhere in between.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="reveal rounded-2xl p-6 bg-card border border-white/[0.06] text-center" data-usecase="individual">
+        <div class="w-14 h-14 rounded-xl bg-purple/10 flex items-center justify-center mx-auto mb-4">
+          <svg class="w-7 h-7 text-purple-light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+        </div>
+        <h3 class="font-brand text-white text-lg mb-2">Individuals</h3>
+        <p class="text-gray-400 text-sm leading-relaxed">Self-awareness, better conversations at work and home. Understand your own style and how others perceive you.</p>
+      </div>
+      <div class="reveal rounded-2xl p-6 bg-card border border-white/[0.06] text-center" data-usecase="couples">
+        <div class="w-14 h-14 rounded-xl bg-disc-red/10 flex items-center justify-center mx-auto mb-4">
+          <svg class="w-7 h-7 text-disc-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+        </div>
+        <h3 class="font-brand text-white text-lg mb-2">Couples</h3>
+        <p class="text-gray-400 text-sm leading-relaxed">Stronger relationships through understanding. Joint reports, private coaching, and a shared space to grow together.</p>
+      </div>
+      <div class="reveal rounded-2xl p-6 bg-card border border-white/[0.06] text-center" data-usecase="teams">
+        <div class="w-14 h-14 rounded-xl bg-disc-blue/10 flex items-center justify-center mx-auto mb-4">
+          <svg class="w-7 h-7 text-disc-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        </div>
+        <h3 class="font-brand text-white text-lg mb-2">Teams</h3>
+        <p class="text-gray-400 text-sm leading-relaxed">SWOT analysis, delegation matrix, shared coaching. Understand team dynamics and improve collaboration.</p>
+      </div>
+      <div class="reveal rounded-2xl p-6 bg-card border border-white/[0.06] text-center" data-usecase="partners">
+        <div class="w-14 h-14 rounded-xl bg-disc-green/10 flex items-center justify-center mx-auto mb-4">
+          <svg class="w-7 h-7 text-disc-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        </div>
+        <h3 class="font-brand text-white text-lg mb-2">Business Partners</h3>
+        <p class="text-gray-400 text-sm leading-relaxed">Co-founder dynamics, leadership alignment. DISC gap analysis and joint coaching for better decision-making.</p>
+      </div>
+      <div class="reveal rounded-2xl p-6 bg-card border border-white/[0.06] text-center" data-usecase="hr">
+        <div class="w-14 h-14 rounded-xl bg-disc-yellow/10 flex items-center justify-center mx-auto mb-4">
+          <svg class="w-7 h-7 text-disc-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+        </div>
+        <h3 class="font-brand text-white text-lg mb-2">HR &amp; L&amp;D</h3>
+        <p class="text-gray-400 text-sm leading-relaxed">Scalable personality insights without expensive workshops. Continuous coaching, not one-off assessments.</p>
+      </div>
+      <div class="reveal rounded-2xl p-6 bg-card border border-white/[0.06] text-center" data-usecase="managers">
+        <div class="w-14 h-14 rounded-xl bg-purple/10 flex items-center justify-center mx-auto mb-4">
+          <svg class="w-7 h-7 text-purple-light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg>
+        </div>
+        <h3 class="font-brand text-white text-lg mb-2">Managers</h3>
+        <p class="text-gray-400 text-sm leading-relaxed">Understand and adapt to each direct report. Personalised coaching for every 1:1 relationship on your team.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
 <!-- SECTION 6: PRODUCT DEMO -->
 <!-- ============================================================ -->
-<section id="demo" class="py-24 border-t border-white/5">
+<section id="demo" class="py-24 border-t border-white/5" data-mode="full investor sales corporate">
   <div class="max-w-5xl mx-auto px-6">
     <div class="reveal text-center mb-16">
       <p class="text-xs text-purple-light uppercase tracking-widest mb-3">Product</p>
@@ -537,7 +689,7 @@
 <!-- ============================================================ -->
 <!-- SECTION 7: GO-TO-MARKET -->
 <!-- ============================================================ -->
-<section id="gtm" class="py-24 border-t border-white/5" data-mode="full sales investor">
+<section id="gtm" class="py-24 border-t border-white/5" data-mode="full investor sales corporate">
   <div class="max-w-5xl mx-auto px-6">
     <div class="reveal text-center mb-16">
       <p class="text-xs text-purple-light uppercase tracking-widest mb-3">Go-to-Market</p>
@@ -633,7 +785,7 @@
 <!-- ============================================================ -->
 <!-- SECTION 8: PRICING -->
 <!-- ============================================================ -->
-<section id="pricing" class="py-24 border-t border-white/5" data-mode="full sales">
+<section id="pricing" class="py-24 border-t border-white/5" data-mode="full investor sales corporate">
   <div class="max-w-5xl mx-auto px-6">
     <div class="reveal text-center mb-16">
       <p class="text-xs text-purple-light uppercase tracking-widest mb-3">Revenue Model</p>
@@ -704,7 +856,7 @@
 <!-- ============================================================ -->
 <!-- SECTION 9: FINANCIALS -->
 <!-- ============================================================ -->
-<section id="financials" class="py-24 border-t border-white/5" data-mode="investor">
+<section id="financials" class="py-24 border-t border-white/5" data-mode="full investor">
   <div class="max-w-6xl mx-auto px-6">
     <div class="reveal text-center mb-16">
       <p class="text-xs text-purple-light uppercase tracking-widest mb-3">Financial Forecast</p>
@@ -781,7 +933,7 @@
 <!-- ============================================================ -->
 <!-- SECTION 10: ROADMAP -->
 <!-- ============================================================ -->
-<section id="roadmap" class="py-24 border-t border-white/5" data-mode="full sales investor">
+<section id="roadmap" class="py-24 border-t border-white/5" data-mode="full investor sales corporate">
   <div class="max-w-5xl mx-auto px-6">
     <div class="reveal text-center mb-16">
       <p class="text-xs text-purple-light uppercase tracking-widest mb-3">Product Roadmap</p>
@@ -893,7 +1045,7 @@
 <!-- ============================================================ -->
 <!-- SECTION 12: THE ASK -->
 <!-- ============================================================ -->
-<section id="ask" class="py-24 border-t border-white/5" data-mode="investor">
+<section id="ask" class="py-24 border-t border-white/5" data-mode="full investor">
   <div class="max-w-4xl mx-auto px-6">
     <div class="reveal text-center mb-16">
       <p class="text-xs text-purple-light uppercase tracking-widest mb-3">The Ask</p>
@@ -962,8 +1114,14 @@ function getInitialMode() {
 
 function setMode(mode) {
   currentMode = mode;
-  document.getElementById('mode-label').textContent = mode.charAt(0).toUpperCase() + mode.slice(1);
+  const labels = { full: 'Full', investor: 'Investor', sales: 'Sales', corporate: 'Corporate' };
+  document.getElementById('mode-label').textContent = labels[mode] || mode.charAt(0).toUpperCase() + mode.slice(1);
   document.getElementById('mode-menu').classList.add('hidden');
+
+  // Update URL param without reload
+  const url = new URL(window.location);
+  if (mode === 'full') { url.searchParams.delete('mode'); } else { url.searchParams.set('mode', mode); }
+  window.history.replaceState({}, '', url);
 
   // Update active state on buttons
   document.querySelectorAll('.mode-btn').forEach(btn => {
@@ -972,7 +1130,7 @@ function setMode(mode) {
   const activeBtn = document.querySelector(`[data-mode-btn="${mode}"]`);
   if (activeBtn) activeBtn.classList.add('bg-white/10');
 
-  // Show/hide sections
+  // Show/hide sections based on data-mode
   document.querySelectorAll('[data-mode]').forEach(el => {
     const modes = el.getAttribute('data-mode').split(' ');
     if (modes.includes(mode)) {
@@ -982,18 +1140,16 @@ function setMode(mode) {
     }
   });
 
+  // In corporate mode, hide personal use-case cards (couples, individual personal)
+  if (mode === 'corporate') {
+    document.querySelectorAll('[data-usecase="couples"]').forEach(el => el.classList.add('hidden'));
+  }
+
   // Update nav visibility
   updateNavVisibility();
 }
 
 function updateNavVisibility() {
-  const navLinks = {
-    '#financials': 'investor',
-    '#ask': 'investor',
-    '#team': ['full', 'investor'],
-    '#pricing': ['full', 'sales'],
-  };
-
   document.querySelectorAll('#topnav a[href^="#"], #mobile-menu a[href^="#"]').forEach(link => {
     const href = link.getAttribute('href');
     const section = document.querySelector(href);
